@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: aliceblue;
+}
+.form {
+  background-image: url("https://wallpapercave.com/wp/wp5961234.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  height: 400px;
+  margin: 0px 0px;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  background-blend-mode: color-burn;
+}
+
+/* navbar  style*/
+nav {
+  background: rgb(20 21 20 / 26%);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 5%);
+  width: 100%;
+  height: 70px;
+  padding: 0px 20px;
+}
+
+/* navbar title style */
+nav .title {
+  line-height: 70px;
+  color: rgb(243, 243, 235);
+  font-size: 50px;
+  margin-left: 50px;
+  font-family: "Tangerine", cursive;
+}
+.logo {
+  position: absolute;
+  top: -28px;
+  width: 130px;
+  height: 130px;
+}
+/* conatiner style */
+.conatiner {
+  position: relative;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff40;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(45, 46, 46, 0.638);
+}
+
+/* conatiner form input style */
+.conatiner form input {
+  padding: 10px 10px 10px 20px;
+  width: 80%;
+  outline: none;
+  font-size: 18px;
+  color: rgba(13, 131, 115, 0.992);
+  border: 2px solid #1111;
+  border-radius: 10px;
+  background: #ffffffdb;
+  text-transform: capitalize;
+}
+
+/* conatiner form input hover style */
+.conatiner form input:hover {
+  box-shadow: 0px 0px 10px 6px rgba(11, 234, 204, 0.638);
+}
+
+/* image-container style */
+.image-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+/* image-container image style */
+.image-conatiner .image {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+}
+
+/* image-container image  img style */
+.image-conatiner .image img {
+  height: 250px;
+  width: 250px;
+  /*object-fit: cover; */
+  transition: 0.7s linear;
+  border-radius: 8px;
+}
+
+/* image-container image:hover img style */
+.image-conatiner .image:hover img {
+  transform: scale(1.1);
+}
+
+/* card  style starts here */
+.card {
+  background-color: rgb(254, 254, 254);
+  width: 350px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px 6px rgb(17 27 26 / 22%);
+  padding-top: 40px;
+}
+.card:hover {
+  transform: scale(1.04);
+  /* box-shadow: 0px 0px 10px 6px rgba(17, 27, 26, 0.638); */
+}
+
+.card .content h2 {
+  font-size: 17px;
+  color: rgb(254 69 19 / 85%);
+}
+
+.card .content {
+  padding: 20px 20px 20px 50px;
+  height: 210px;
+}
+
+.card .content p {
+  margin-top: 6px;
+}
+
+.card .content p strong {
+  color: #0f8f4dcc;
+}
+
+/* card  style Ends here */
+
+/* button styles */
+button {
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  background: #f23a0ec7;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: 0.8s;
+}
+
+button:hover {
+  background-color: #6bb662ba;
+  border: 1px solid #69a365;
+  color: black;
+}
+
+.fas {
+  color: #f1dc2a;
+  font-size: 18px;
+}
+
+/* loader styles */
+.main {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+}
+/*========= loader1 Starts======== */
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 253, 253);
+}
+.loader img {
+  width: 320px;
+}
+@media (max-width: 425px) {
+  .loader img {
+    width: 280px;
+  }
+}
+/*========= loader1 Ends======== */
+/* loader styles Ends */
+
+/*  media  style*/
+@media screen and (max-width: 1200px) {
+  .conatiner {
+    margin: 90px 30px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .conatiner form input {
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    .conatiner {
+      margin: 90px 10px 10px 10px;
+      padding: 10px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      top: -15px;
+    }
+    .card {
+      width: 300px;
+      padding-top: 20px;
+    }
+    .image-conatiner .image {
+      height: 250px;
+      width: 300px;
+    }
+    .card .content {
+      height: 230px;
+      padding: 10px 10px 10px 20px;
+    }
+  }
+
+  button {
+    padding: 10px 30px;
+    display: block;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+}
